@@ -1,6 +1,10 @@
 ﻿# SSTI Audition Lab
 
-Today we will be abusing SSTI on a flask application to obtain a reverse shell.
+## Welcome!
+
+In this lab we will be taking a look at Server-side Template Injection; a web vulnerability that is common among many web frameworks that use templates. Please feel free to step outside of the instructions and play around with the injection and various features you can abuse with it. 
+
+Template engines are designed to help frameworks generate web pages by combining fixed templates with input data. Server-side template injection occurs when a template renders in a web application without any filtering, allowing us, the attacker, to execute arbitrary code on the server. In this lab, we will be taking a look at the Jinja2 framework in python and how to abuse SSTI to gain a reverse shell against the web server.
 
 ## Discovery
 
