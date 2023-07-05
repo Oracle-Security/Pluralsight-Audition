@@ -1,4 +1,4 @@
 ﻿#! /bin/bash
 
 # Install Programs
-sudo apt install -y nc
+apt install -y nc

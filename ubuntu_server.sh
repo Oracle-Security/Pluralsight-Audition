@@ -2,11 +2,11 @@
 #!/bin/bash
 
 # Update the system
-sudo apt-get update -y
-sudo apt-get upgrade -y
+apt-get update -y
+apt-get upgrade -y
 
 # Install python3 and pip
-sudo apt-get install python3 python3-pip -y
+apt-get install python3 python3-pip -y
 
 # Create application directory
 mkdir ~/flask_app
