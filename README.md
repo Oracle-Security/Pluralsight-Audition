@@ -6,7 +6,7 @@ In this lab, we will look at Server-side Template Injection, a web vulnerability
 
 Template engines are designed to help frameworks generate web pages by combining fixed templates with input data. Server-side template injection occurs when a template renders in a web application without filtering, allowing us, the attacker, to execute arbitrary code on the server. In this lab, we will look at the Jinja2 framework in Python and how to abuse SSTI to gain a reverse shell against the web server.
 
-## Discovery
+## Discovery & Fuzzing
 
 ![img8.PNG](img8.PNG)
 
@@ -57,7 +57,7 @@ greeting = render_template_string(f"Hello, {name}!")
 
 The `render_template_string` function renders the template {name} without filtering. Because of this, we can make the application evaluate any code we provide.
 
-## Discovery of Python Methods with SSTI (Flask / Jinja2)
+## Discovery and Exploitation of Python Methods with SSTI (Flask / Jinja2)
 
 Some template frameworks allow you to execute arbitrary code freely; Jinja2, however, does not. We must first figure out what methods we can access.
 
